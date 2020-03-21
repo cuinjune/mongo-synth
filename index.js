@@ -4,7 +4,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const config = require('./config');
-
 const PORT = config.PORT;
 
 // ---- Connect to mongodb here ----
