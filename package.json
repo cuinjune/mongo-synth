@@ -1,0 +1,33 @@
+{
+  "name": "mongo-synth",
+  "version": "1.0.0",
+  "description": "A simple synthesizer with shareable presets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js", 
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuinjune/mongo-synth.git"
+  },
+  "keywords": [
+    "synth"
+  ],
+  "author": "Zack Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cuinjune/mongo-synth/issues"
+  },
+  "homepage": "https://github.com/cuinjune/mongo-synth#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
