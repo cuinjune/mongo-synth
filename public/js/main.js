@@ -61,16 +61,13 @@ async function clearSynthData() {
 
 window.addEventListener('DOMContentLoaded', async () => {
 
-    //start button listener
-    const $sendButton = document.querySelector("#startBtn");
-    $sendButton.addEventListener('click', (out) => {
-        Module.sendBang("testReceiver");
-        Module.sendFloat("testReceiver", 3.14);
-        Module.sendSymbol("testReceiver", "Hello");
-        Module.startMessage(3);
-        Module.addFloat(1);
-        Module.addFloat(2);
-        Module.addFloat(3);
-        Module.finishList("testReceiver");
+    var dial = Nexus.Add.Dial('#dial', {
+        'size': [75, 75]
     });
+
+    dial.on('change', function (v) {
+        Module.sendFloat("volume", v);
+    })
+
+
 });

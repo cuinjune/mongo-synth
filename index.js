@@ -22,10 +22,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 const publicURL = path.resolve(`${__dirname}/public`);
 const pdURL = path.resolve(`${__dirname}/public/pd`);
+const nexusuiURL = path.resolve(`${__dirname}/node_modules/nexusui/dist`);
 
 // Set your static server
 app.use(express.static(publicURL));
 app.use(express.static(pdURL));
+app.use(express.static(nexusuiURL));
 
 // Views
 app.get('/', (req, res) => {
