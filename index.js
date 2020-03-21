@@ -22,9 +22,11 @@ const db = require('./models/mongo-synth');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 const publicURL = path.resolve(`${__dirname}/public`);
+const pdURL = path.resolve(`${__dirname}/public/pd`);
 
 // Set your static server
 app.use(express.static(publicURL));
+app.use(express.static(pdURL));
 
 // Views
 app.get('/', (req, res) => {
