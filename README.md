@@ -2,7 +2,7 @@
 <img src="screenshot.png" alt="Screenshot" width="1000"/>
 This is the final assignment for the ITP class Dynamic Web Development.<br />
 The assignment was to use all of the experience and knowledge I have gained in this class to create a full-stack web application.<br />
-
+<br />
 I created a music synthesizer application which users can load, save, or delete presets that are stored in the MongoDB database.
 
 Here's the [Live Demo on Glitch](https://cuinjune-mongo-synth.glitch.me/) (Try in Chrome, it doesn't seem to work in Safari)
