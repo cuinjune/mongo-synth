@@ -89,10 +89,10 @@ int main(int argc, char **argv)
     // initialize SDL2 audio
     SDL_Init(SDL_INIT_AUDIO);
     SDL_AudioSpec want, have;
-    want.freq = 48000;
+    want.freq = 44100;
     want.format = AUDIO_F32;
     want.channels = 2;
-    want.samples = 4096;
+    want.samples = 512;
     want.callback = audio;
     SDL_AudioDeviceID dev = SDL_OpenAudioDevice(NULL, 0, &want, &have, SDL_AUDIO_ALLOW_ANY_CHANGE);
     printf("want: %d %d %d %d\n", want.freq, want.format, want.channels, want.samples);
@@ -109,7 +109,8 @@ int main(int argc, char **argv)
     libpd_finish_message("pd", "dsp");
 
     // open patch       [; pd open file folder(
-    libpd_openfile("synth.pd", ".");
+    libpd_add_to_search_path("pd");
+    libpd_openfile("pd/main.pd", ".");
 
     // start audio processing
     SDL_PauseAudioDevice(dev, 0);

@@ -11,3 +11,24 @@ html {
 body {
     font-family: Helvetica, sans-serif;
 }
+
+#preset {
+    font-size: 11pt;
+    text-indent: 6%;
+    width: 100px;
+    height: 30px;
+}
+
+#saveButton {
+    font-size: 8pt;
+    text-indent: 6%;
+    width: 60px;
+    height: 30px;
+}
+
+#deleteButton {
+    font-size: 8pt;
+    text-indent: 6%;
+    width: 60px;
+    height: 30px;
+}
