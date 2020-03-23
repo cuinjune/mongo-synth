@@ -172,6 +172,7 @@ window.addEventListener("DOMContentLoaded", async () => {
         else {
             if (confirm(`Do you want to overwrite the existing preset "${preset}?"`)) {
                 await updateSynthDataElement(synthData[presetIndex]._id, newData);
+                await updateOptions(presetIndex);
             }
         }
     });
