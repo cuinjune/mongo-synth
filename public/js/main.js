@@ -97,7 +97,8 @@ window.addEventListener("DOMContentLoaded", async () => {
             'step': 0,
             'value': synthData[0][`knob${i}`]
         });
-        knobs[i].colorize("accent", "#4db33d");
+        knobs[i].colorize("accent", "#4DB33D");
+        knobs[i].colorize("fill", "#E8E7D5");
         knobs[i].on("change", function (v) {
             Module.sendFloat(`knob${i}`, v);
         });
@@ -203,7 +204,7 @@ window.addEventListener("DOMContentLoaded", async () => {
         'lowNote': 48,
         'highNote': 84
     });
-    keyboard.colorize("accent", "#4db33d");
+    keyboard.colorize("accent", "#E8E7D5");
     keyboard.on("change", function (v) {
         if (v.state == true)
             Module.sendFloat("note", v.note);

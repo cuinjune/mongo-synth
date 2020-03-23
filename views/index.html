@@ -14,29 +14,140 @@
 </head>
 
 <body>
-    <h1>Mongo Synth</h1>
-    <div id="synth">
-        <div id="presets"></div>
-        <input type="text" id="preset" value="default">
-        <button id="saveButton">Save</button>
-        <button id="deleteButton">Delete</button>
-        <div id="knob0"></div>
-        <div id="knob1"></div>
-        <div id="knob2"></div>
-        <div id="knob3"></div>
-        <div id="knob4"></div>
-        <div id="knob5"></div>
-        <div id="knob6"></div>
-        <div id="knob7"></div>
-        <div id="knob8"></div>
-        <div id="knob9"></div>
-        <div id="knob10"></div>
-        <div id="knob11"></div>
-        <div id="knob12"></div>
-        <div id="knob13"></div>
-        <div id="knob14"></div>
-        <div id="knob15"></div>
-        <div id="keyboard"></div> 
+    <div id="synthArea" class="debug">
+        <div id="headArea" class="debug">
+            <div id="titleArea" class="debug">
+                <div id="titleArea_row0" class="debug">
+                    <h1>Mongo Synth</h1>
+                </div>
+                <div id="titleArea_row1" class="debug">
+                    <h5>8-Voice Polyphonic Virtual Analog Synthesizer</h5>
+                </div>
+            </div>
+            <div id="presetArea" class="debug">
+                <div id="presetArea_col0" class="debug">
+                    <div id="presets"></div>
+                </div>
+                <div id="presetArea_col1" class="debug">
+                    <input id="preset" type="text" value="default">
+                </div>
+                <div id="presetArea_col2" class="debug">
+                    <button id="saveButton">Save</button>
+                </div>
+                <div id="presetArea_col3" class="debug">
+                    <button id="deleteButton">Delete</button>
+                </div>
+            </div>
+        </div>
+        <div id="knobArea" class="debug">
+            <div id="knobArea_row0" class="debug">
+                <div id="knobArea_row0_col0" class="debug">
+                    <div id="knob0"></div>
+                </div>
+                <div id="knobArea_row0_col1" class="debug">
+                    <div id="knob1"></div>
+                </div>
+                <div id="knobArea_row0_col2" class="debug">
+                    <div id="knob2"></div>
+                </div>
+                <div id="knobArea_row0_col3" class="debug">
+                    <div id="knob3"></div>
+                </div>
+                <div id="knobArea_row0_col4" class="debug">
+                    <div id="knob4"></div>
+                </div>
+                <div id="knobArea_row0_col5" class="debug">
+                    <div id="knob5"></div>
+                </div>
+                <div id="knobArea_row0_col6" class="debug">
+                    <div id="knob6"></div>
+                </div>
+                <div id="knobArea_row0_col7" class="debug">
+                    <div id="knob7"></div>
+                </div>
+            </div>
+            <div id="knobArea_row1" class="debug">
+                <div id="knobArea_row1_col0" class="debug">
+                    <p>OSC1<br />Waveform</p>
+                </div>
+                <div id="knobArea_row1_col1" class="debug">
+                    <p>OSC2<br />Waveform</p>
+                </div>
+                <div id="knobArea_row1_col2" class="debug">
+                    <p>OSC1<br />Octave</p>
+                </div>
+                <div id="knobArea_row1_col3" class="debug">
+                    <p>OSC2<br />Octave</p>
+                </div>
+                <div id="knobArea_row1_col4" class="debug">
+                    <p>OSC1+2<br />Mix</p>
+                </div>
+                <div id="knobArea_row1_col5" class="debug">
+                    <p>FM<br />Rate</p>
+                </div>
+                <div id="knobArea_row1_col6" class="debug">
+                    <p>FM<br />Amount</p>
+                </div>
+                <div id="knobArea_row1_col7" class="debug">
+                    <p>Master<br />Volume</p>
+                </div>
+            </div>
+            <div id="knobArea_row2" class="debug">
+                <div id="knobArea_row2_col0" class="debug">
+                    <div id="knob8"></div>
+                </div>
+                <div id="knobArea_row2_col1" class="debug">
+                    <div id="knob9"></div>
+                </div>
+                <div id="knobArea_row2_col2" class="debug">
+                    <div id="knob10"></div>
+                </div>
+                <div id="knobArea_row2_col3" class="debug">
+                    <div id="knob11"></div>
+                </div>
+                <div id="knobArea_row2_col4" class="debug">
+                    <div id="knob12"></div>
+                </div>
+                <div id="knobArea_row2_col5" class="debug">
+                    <div id="knob13"></div>
+                </div>
+                <div id="knobArea_row2_col6" class="debug">
+                    <div id="knob14"></div>
+                </div>
+                <div id="knobArea_row2_col7" class="debug">
+                    <div id="knob15"></div>
+                </div>
+            </div>
+            <div id="knobArea_row3" class="debug">
+                <div id="knobArea_row3_col0" class="debug">
+                    <p>Filter<br />Type</p>
+                </div>
+                <div id="knobArea_row3_col1" class="debug">
+                    <p>Filter<br />Cutoff</p>
+                </div>
+                <div id="knobArea_row3_col2" class="debug">
+                    <p>Filter<br />Resonance</p>
+                </div>
+                <div id="knobArea_row3_col3" class="debug">
+                    <p>Filter<br />Amount</p>
+                </div>
+                <div id="knobArea_row3_col4" class="debug">
+                    <p>Filter<br />Attack</p>
+                </div>
+                <div id="knobArea_row3_col5" class="debug">
+                    <p>Filter<br />Decay</p>
+                </div>
+                <div id="knobArea_row3_col6" class="debug">
+                    <p>Amp<br />Attack</p>
+                </div>
+                <div id="knobArea_row3_col7" class="debug">
+                    <p>Amp<br />Decay</p>
+                </div>
+            </div>
+        </div>
+        <div id="keyboardArea" class="debug">
+            <div id="keyboard"></div>
+        </div>
     </div>
 </body>
 
