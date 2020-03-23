@@ -11,9 +11,9 @@ And here you can find the [List of Mongo Synth APIs](API.md)
 
 ## Setup
 1. Installation of node.js is required. Follow [this guide](https://github.com/itp-dwd/2020-spring/blob/master/guides/installing-nodejs.md) to install it.
-2. You need to create `.env` file to have access to the MongoDB database. <br />
-   Visit [MongoDB Atlas](https://www.mongodb.com/cloud/atlas), create a cluster and get the connection string. <br />
-   Add `MONGODB_URI='connection string starting with mongodb+srv:'` to your `.env` file.
+2. You need to create an `.env` file to have access to the MongoDB database. <br />
+   Visit [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) to create a cluster and get the connection string. <br />
+   Add `MONGODB_URI='connection string that starts with mongodb+srv:'` to your `.env` file.
 3. Run the following commands in the Terminal.
 ```
 git clone https://github.com/cuinjune/mongo-synth.git
