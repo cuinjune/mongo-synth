@@ -1,7 +1,7 @@
 {
   "name": "mongo-synth",
   "version": "1.0.0",
-  "description": "A simple synthesizer with shareable presets",
+  "description": "8-Voice Polyphonic Virtual Analog Synthesizer",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
