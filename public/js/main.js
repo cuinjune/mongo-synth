@@ -1,7 +1,9 @@
+const shouldSupportSafari = true;
+
 // create an AudioContext
 const audioContextList = [];
 (function () {
-    let AudioContext = self.AudioContext || self.webkitAudioContext || false;
+    let AudioContext = self.AudioContext || (shouldSupportSafari && self.webkitAudioContext) || false;
     if (AudioContext) {
         self.AudioContext = new Proxy(AudioContext, {
             construct(target, args) {
@@ -12,7 +14,7 @@ const audioContextList = [];
         });
     }
     else {
-        alert("Web Audio API is not supported in this browser.\nPlease try it on Google Chrome or Mozilla Firefox.");
+        alert("The Web Audio API is not supported in this browser.\nPlease try it on the lastest version of Chrome or Firefox.");
     }
 })();
 
