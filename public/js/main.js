@@ -12,7 +12,7 @@ const audioContextList = [];
         });
     }
     else {
-        alert("The Web Audio API is not supported in this browser.\nPlease try it on Google Chrome or Mozilla Firefox");
+        alert("The Web Audio API is not supported in this browser.\nPlease try it on Google Chrome or Mozilla Firefox.");
     }
 })();
 
