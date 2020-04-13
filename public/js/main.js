@@ -1,13 +1,19 @@
-// audio autoplay
+// create an AudioContext
 const audioContextList = [];
 (function () {
-    self.AudioContext = new Proxy(self.AudioContext, {
-        construct(target, args) {
-            const result = new target(...args);
-            audioContextList.push(result);
-            return result;
-        }
-    });
+    let AudioContext = self.AudioContext || self.webkitAudioContext || false;
+    if (AudioContext) {
+        self.AudioContext = new Proxy(AudioContext, {
+            construct(target, args) {
+                const result = new target(...args);
+                audioContextList.push(result);
+                return result;
+            }
+        });
+    }
+    else {
+        alert("The Web Audio API is not supported in this browser.\nPlease try it on Google Chrome or Mozilla Firefox");
+    }
 })();
 
 function resumeAudio() {
