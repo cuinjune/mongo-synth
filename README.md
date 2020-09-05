@@ -5,8 +5,9 @@ The assignment was to use all of the experience and knowledge I have gained in t
 
 I created a music synthesizer application which users can load, save, or delete presets that are stored in the MongoDB database.
 
-Here's the [Live Demo on Glitch](https://cuinjune-mongo-synth.glitch.me/)
+You can control the knobs to change sound and use a computer keyboard to play the virtual piano keyboard.
 
+Here's the [Live Demo on Glitch](https://cuinjune-mongo-synth.glitch.me/)
 
 And here you can find the [List of Mongo Synth APIs](API.md)
 
