@@ -7,9 +7,6 @@ I created a music synthesizer application which users can load, save, or delete 
 
 You can control the knobs to change sound and use a computer keyboard to play the virtual piano keyboard.
 
-Here's the [Live Demo on Glitch](https://cuinjune-mongo-synth.glitch.me/)
-
-And here you can find the [List of Mongo Synth APIs](API.md)
 
 ## Setup
 1. Installation of node.js is required. Follow [this guide](https://github.com/itp-dwd/2020-spring/blob/master/guides/installing-nodejs.md) to install it.
