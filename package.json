@@ -27,7 +27,7 @@
     "dependencies": "0.0.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.9.5",
+    "mongoose": "^5.12.10",
     "morgan": "^1.10.0",
     "nexusui": "^2.0.13"
   },
